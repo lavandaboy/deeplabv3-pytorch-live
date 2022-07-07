@@ -131,7 +131,7 @@ function ImageSegmentation() {
       // Render original image on canvas before painting pixels
       ctx.drawImage(image, 0, 0, width, height);
 
-      const colors = max.data;
+      const colors = max.data();
       for (let i = 0; i < height; i++) {
         for (let j = 0; j < width; j++) {
           let idx = colors[i * width + j];
